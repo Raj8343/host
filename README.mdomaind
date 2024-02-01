@@ -1,0 +1,9 @@
+# host
+Write-Host 'Hi there, I am shellGPT and can create high-quality shell scripts that fulfill your requirements.'
+$user_input = Read-Host -Prompt 'Please input your requirements'
+
+switch ($user_input) {
+    'JAVA' { Write-Host 'You have requested a Java-related script. Please provide more details about the task you want to accomplish.' }
+    'SQL' { Write-Host 'You have requested an SQL-related script. Please provide more details about the task you want to accomplish.' }
+    default { Write-Host ('Your input "{0}" is not recognized. Please try again with a valid requirement.' -f $user_input) }
+}
